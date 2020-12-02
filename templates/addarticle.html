@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block body_içerik %}
+
+    <h3>Add Article</h3>
+    <small>Welcome, {{session["username"]}}</small><hr>
+
+    {% from "includes/formhelpers.html" import render_field %}
+    
+    <form method=post>
+        <dl>
+            {{ render_field(form.author, class="form-control") }}
+            {{ render_field(form.title, class="form-control") }}
+            {{ render_field(form.subtitle, class="form-control") }}
+            {{ render_field(form.content, class="form-control") }}
+        </dl>
+        <button type="submit" class="btn btn-success">Add</button>
+    </form>
+    
+
+
+{% endblock body_içerik %}
