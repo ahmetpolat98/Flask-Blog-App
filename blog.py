@@ -10,7 +10,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 app.secret_key = "polatblog"
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/ahmet/OneDrive/Masaüstü/Kodlama Projeleri/Python/Flask/blog/blog.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////...../blog.db'
 
 db = SQLAlchemy(app)
 
@@ -88,12 +88,6 @@ def index():
     if posts != 0:
         return render_template("index.html", posts = posts)
     
-    return render_template("index.html")
-
-
-#dinamik url
-@app.route("/article/<int:id>")
-def article(id):
     return render_template("index.html")
 
 
