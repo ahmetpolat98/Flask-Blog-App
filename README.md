@@ -8,4 +8,4 @@
   5. View All Posts
 
 
-Clean Blog Theme: https://startbootstrap.com/theme/clean-blog
+Used Theme: https://startbootstrap.com/theme/clean-blog
